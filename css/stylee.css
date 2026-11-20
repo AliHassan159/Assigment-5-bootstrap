@@ -4,6 +4,7 @@ font-weight: 400;
 font-style: normal;
 height: 1800px;
 background-color: #0d1118;
+overflow-x: hidden;
 }
 
 :root{
