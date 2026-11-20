@@ -1,0 +1,935 @@
+body{
+font-family: "Days One", sans-serif;
+font-weight: 400;
+font-style: normal;
+height: 1800px;
+background-color: #0d1118;
+}
+
+:root{
+    --main-color:#cbfe1c;
+}
+
+
+/* navbar */
+nav{
+   background-color: #0d1118;
+}
+nav .logo{
+    color: var(--main-color);
+}
+.logo i{
+    font-size: 18px;
+}
+nav .navbar-nav .nav-item a{
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.76);
+}
+nav .navbar-nav .nav-item .active {
+    color: var(--main-color);
+}
+nav .navbar-nav .nav-item a:hover{
+    color: var(--main-color);
+}
+
+.right-logo{
+    margin-right: 10px;
+}
+.right-logo button{
+    background-color: var(--main-color);
+}
+.right-logo button:hover{
+    background-color: var(--main-color);
+}
+.right-logo .fa-regular{
+    font-size: 17px;
+    color: rgb(219, 212, 212);
+}
+.right-logo .fa-regular:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* home */
+#Home{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.877)), url(../pic/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.home-content{
+    margin-top: 170px;
+}
+.left-home h1{
+    font-size: 55px;
+}
+.left-home span{
+    color: var(--main-color);
+    font-size: 50px;
+}
+
+.left-home p{
+    font-size: 15px;
+}
+.left-home button{
+    font-size: 13px;
+    padding: 15px 30px;
+}
+.left-home button:nth-child(1){
+    background-color: var(--main-color);
+}
+.left-home button:nth-child(2){
+border: 2px solid #cbfe1c;
+color: var(--main-color);
+}
+.left-home button:nth-child(2):hover{
+color: black;
+background-color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+.right-home img {
+    width: 80%;
+    height: 70%;
+}
+.right-home i{
+    color: var(--main-color);
+}
+
+.right-home .span{
+padding: 15px;
+background-color: #29303b;
+position: absolute;
+bottom: 18%;
+}
+.right-home .span span{
+    color: white;
+    font-size: 11px;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+.right-home .span h5{
+    font-size: 17px;
+    color: lightcyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* our games */
+#OUR-GAMES{
+background-color: #0d1118;
+padding-top: 60px;
+}
+
+.our-text{
+    text-align: center;
+}
+ .our-text span {
+    display: inline-flex;  
+    align-items: center;   
+    gap: 15px;   
+    color: var(--main-color);        
+} 
+
+.our-text span::before,.our-text span::after {
+    content: "";          
+    width: 50px;           
+    height: 2px;           
+    background-color: #cbfe1c; 
+}
+
+
+
+
+
+
+
+
+
+ .carousel-item .items img{
+    width: 90%;
+    height: 70%;
+} 
+.carousel-control-prev,.carousel-control-next{
+    position: relative;
+}
+.fa-arrow-left-long{
+    position: absolute;
+    bottom: 30px;
+    left: 235%;
+    background-color: #000000;
+    font-size: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.438);
+}
+.fa-arrow-right-long{
+position: absolute;
+bottom: 30px;
+left: 270%;
+background-color: #000000;
+font-size: 25px;
+border: 2px solid rgba(255, 255, 255, 0.438);
+}
+.fa-arrow-right-long:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.fa-arrow-left-long:hover{
+     color: var(--main-color);
+    border-color: var(--main-color);
+}
+.view{
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+color: var(--main-color);
+background-color: #0d1118;
+padding: 15px 25px;
+font-weight: 600;
+border: 2px solid var(--main-color);
+border-radius: 10px;
+cursor: pointer;
+position: absolute;
+left: 47%;
+bottom: 5%;
+}
+.view:hover{
+background-color: var(--main-color);
+color: #29303b;
+}
+
+
+
+
+
+
+
+.items{
+    position: relative;
+   cursor: pointer;
+}
+
+.items i{
+    color: var(--main-color);
+}
+.items img{
+     transition: border 0.5s ;
+}
+.items span{
+    font-size: 10px;
+    border: 1px solid white;
+    background-color: #00000077;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: -35px;
+    opacity: 0;
+    visibility: hidden;
+     transition: opacity 0.4s;
+}
+
+.items h5{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 110px;
+    left: 30px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s;
+}
+
+
+.items:hover img{
+border: 2px solid var(--main-color);
+
+}
+
+.items:hover span ,.items:hover h5{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* what we do */
+#What-We-Do{
+background-color: #0d1118;
+}
+
+.what-text span{
+color: var(--main-color);
+}
+.what-text h1,h2{
+    font-size: 40px;
+}
+
+ .what-text .span{
+    display: inline-flex;  
+    align-items: center;   
+    gap: 15px;   
+    color: var(--main-color);        
+} 
+
+.what-text .span::before,.what-text .span::after {
+    content: "";          
+    width: 50px;           
+    height: 2px;           
+    background-color: #cbfe1c; 
+}
+
+
+
+
+
+.cards{
+    padding: 90px;
+    background-color: #1a1a1a;
+    border: 1px solid #1e2939;
+}
+.cards i{
+    padding:20px ;
+}
+.cards .fa-solid,.fa-brands{
+    background-color: #1e2939;
+    color: var(--main-color);
+}
+.cards:nth-child(3){
+    padding: 0;
+}
+.cards:nth-child(6){
+    padding: 0;
+}
+
+.cards{
+    position: relative;
+}
+
+.cards .fa-caret-left,.cards .fa-caret-right{
+    position: absolute;
+    font-size: 50px;
+    padding: 0px;
+    width: 0px;
+opacity: 0;
+visibility: hidden;
+transition: opacity   0.4s ;
+}
+.cards .fa-caret-left{
+   transform: rotate(45deg);
+   left: 15px;
+   top: -10px;
+}
+.cards .fa-caret-right{
+transform: rotate(45deg);
+right: 30px;
+bottom: 5px;
+}
+
+.cards:hover {
+    border: 1px solid var(--main-color);
+}
+.cards:hover i{
+ color: black; 
+background-color: var(--main-color);
+}
+
+.cards:hover .fa-caret-left ,
+.cards:hover .fa-caret-right{
+color: var(--main-color);
+opacity: 1;
+visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* games */
+#games{
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+ .game-card{
+    overflow: hidden;
+    width: 100%;
+}
+.game-card-reverse{
+    overflow: hidden;
+    width: 100%;
+}
+
+.game-card .row {
+    animation: scroll-left 15s linear infinite;
+}
+
+
+.game-card-reverse .row{
+animation: scroll-right 15s linear infinite;
+}
+
+
+
+
+
+
+@keyframes scroll-left {
+    0% { 
+        transform: translateX(0);
+    }
+
+100% {
+transform: translateX(-50%);
+}
+
+}  
+  
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* our team */
+#our-team{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.text-team span{
+color: var(--main-color);
+}
+.text-team span {
+    display: inline-flex;  
+    align-items: center;   
+    gap: 15px;   
+    color: var(--main-color);        
+} 
+.text-team span::before,.text-team span::after {
+    content: "";          
+    width: 50px;           
+    height: 2px;           
+    background-color: #cbfe1c; 
+}
+.text-team h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.text-team h6{
+    font-size: 18px;
+font-weight: 100;
+color: rgb(148, 142, 142);
+}
+
+
+
+
+
+
+.card-team{
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.ineer{
+    position: absolute;
+    top: 195px;
+    left: 40px;
+}
+.ineer h5{
+    color: white;
+    font-weight: bold;
+}
+
+.ineer h6{
+color: var(--main-color);
+font-size: 13px;
+font-weight: 100;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.ineer span{
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.row .sp:nth-child(2){
+color: white;
+position: absolute;
+transform: rotate(90deg);
+left: 230px;
+top: 220px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* get-contact */
+#get-contact{
+    background-color: #101828;
+    
+}
+
+
+.text-contact span{
+    color: var(--main-color);
+    margin-top: 80px;
+}
+.text-contact span {
+    display: inline-flex;  
+    align-items: center;   
+    gap: 15px;   
+    color: var(--main-color);        
+} 
+.text-contact span::before,.text-contact span::after {
+    content: "";          
+    width: 50px;           
+    height: 2px;           
+    background-color: #cbfe1c; 
+}
+
+
+
+
+
+
+
+
+.text-contact h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.text-contact h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: gray;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left-contact{
+background-color: #1e2939;
+padding: 50px;
+}
+
+.left-contact .fa-solid{
+background-color: var(--main-color);
+font-size: 25px;
+padding: 15px 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.left-contact h5{
+font-size: 20px;
+font-weight: bold;
+}
+
+.left-contact h6{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+
+}
+
+.end-contact{
+    background-color:var(--main-color);
+}
+
+.end-contact h6{
+     font-size: 15px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+
+
+
+
+
+.end-contact{
+    padding: 30px;
+}
+
+
+.end-icon i{
+    font-size: 20px;
+    background-color: black;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+form{
+    background-color: #1e2939;
+    color: rgba(204, 198, 198, 0.87);
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+form h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+.form-control{
+    background-color: #28364ba6;
+    font-size: 14px;
+}
+.form-label{
+font-size: 13px;
+}
+
+form button{
+background-color: var(--main-color);
+border: none;
+padding: 16px 0px;
+font-size: 16px;
+border-radius: 10px;
+}
+.form-check-label{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+.support{
+border-top: 1px solid ;
+}
+.left-supp h5,.right-supp h5{
+color: var(--main-color);
+font-size: 22px;
+}
+.left-supp h6,.right-supp h6{
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+.first-fott .fa-gamepad,.first-fott h6{
+ color: var(--main-color);
+font-size: 18px;
+}
+
+.first-fott p{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.fott-icon i{
+    color: gray;
+    font-size: 20px;
+    background-color: black;
+cursor: pointer;
+}
+
+.fott-icon i:hover{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fott ul{
+    list-style: none;
+}
+.fott ul li:nth-child(1){
+    color: white;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.fott ul li:nth-child(1):hover{
+    color: white;
+}
+.fott ul li{
+   color: gray;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+}
+.fott ul li:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.policy{
+ color: gray;
+display: flex;
+justify-content: space-between;
+font-size: 14px;
+align-items: center;
+border: 2px solid rgba(255, 255, 255, 0.226);
+border-left: none;
+border-right: none;
+border-bottom: none;
+}
+.policy ul li{
+    list-style: none;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 14px;
+}
+.policy ul li:hover{
+    color: var(--main-color);
+}
+.policy ul{
+    display: flex;
+    column-gap: 20px;
+}
