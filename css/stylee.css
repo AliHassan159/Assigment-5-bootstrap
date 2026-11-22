@@ -72,9 +72,7 @@ nav .navbar-nav .nav-item a:hover{
 .home-content{
     margin-top: 170px;
 }
-/* .left-home h1{
-    font-size: 55px;
-} */
+
 .left-home span{
     color: var(--main-color);
     font-size: 50px;
@@ -83,10 +81,10 @@ nav .navbar-nav .nav-item a:hover{
 .left-home p{
     font-size: 15px;
 }
-/* .left-home button{
+.left-home button{
     font-size: 13px;
-    padding: 15px 30px;
-} */
+    padding: 15px;
+}
 .left-home button:nth-child(1){
     background-color: var(--main-color);
 }
