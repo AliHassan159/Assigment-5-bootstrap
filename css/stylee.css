@@ -62,19 +62,19 @@ nav .navbar-nav .nav-item a:hover{
 
 /* home */
 #Home{
-    height: 100vh;
     width: 100%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.877)), url(../pic/hero-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 .home-content{
     margin-top: 170px;
 }
-.left-home h1{
+/* .left-home h1{
     font-size: 55px;
-}
+} */
 .left-home span{
     color: var(--main-color);
     font-size: 50px;
@@ -83,10 +83,10 @@ nav .navbar-nav .nav-item a:hover{
 .left-home p{
     font-size: 15px;
 }
-.left-home button{
+/* .left-home button{
     font-size: 13px;
     padding: 15px 30px;
-}
+} */
 .left-home button:nth-child(1){
     background-color: var(--main-color);
 }
@@ -154,6 +154,7 @@ bottom: 18%;
 #OUR-GAMES{
 background-color: #0d1118;
 padding-top: 60px;
+overflow-x: hidden;
 }
 
 .our-text{
@@ -317,10 +318,10 @@ border: 2px solid var(--main-color);
 
 
 
-
 /* what we do */
 #What-We-Do{
 background-color: #0d1118;
+overflow-x:hidden ;
 }
 
 .what-text span{
@@ -911,8 +912,6 @@ cursor: pointer;
 
 .policy{
  color: gray;
-display: flex;
-justify-content: space-between;
 font-size: 14px;
 align-items: center;
 border: 2px solid rgba(255, 255, 255, 0.226);
